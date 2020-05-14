@@ -89,3 +89,6 @@ Finally, get [a permission to peel](/04-fourth-part-of-the-game/010-permission.m
 
 ## background.jpg
 You can add a file named `background.jpg` in the root folder of you guide. That image will be used as the background image of the guide. 
+
+# Publishing the guide
+Please create [an issue](https://github.com/nice-game-hints/template/issues) to this repository about publishing and I will help you with it.
