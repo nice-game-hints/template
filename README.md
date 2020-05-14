@@ -7,10 +7,10 @@ Fill this README.md with something you want to tell _a contributor_. This README
 Copy this template repository (From the green "Clone or download" button) to get started with your own game hints.
 </p>
 
-# Writing the guide
+# Concepts of a game hint repository
 The concepts for the NGH hints are **a game** that contains multiple **guides**. **A guide** has multiple **hints** that the reader can then reveal one by one. **A guide** can also have **subguides**.
 
-Guides are written using [markdown](https://guides.github.com/features/mastering-markdown/) language.
+Guide files are written using [markdown](https://guides.github.com/features/mastering-markdown/) language.
 
 ## index.md - Metadata about the game
 The one required file is `index.md`. This file defines the name of the game and other metadata for the game. Example `index.md` looks like this:
