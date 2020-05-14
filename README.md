@@ -1,7 +1,7 @@
-# NGH template
-This is a template repository for writing your own Nice Game Hint guides. Fill this README.md with something you want to tell _a contributor_. This README is not shown in the www.nicegamehints.com site.
+# Template repository
+[This is a template repository](https://github.com/nice-game-hints/template) for writing your own Nice Game Hint guides.
 
-Copy this template repository (From the green "Clone or download" button) to get started with your own game hints.
+[comment]: # (Fill this README.md with something you want to tell _a contributor_. This README is not shown in the www.nicegamehints.com site. Copy this template repository (From the green "Clone or download" button) to get started with your own game hints.)
 
 # Writing the guide
 The concepts for the NGH hints are **a game** that contains multiple **guides**. **A guide** has multiple **hints** that the reader can then reveal one by one. **A guide** can also have **subguides**.
