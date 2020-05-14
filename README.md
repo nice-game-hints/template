@@ -1,5 +1,5 @@
-# Template repository
-[This is a template repository](https://github.com/nice-game-hints/template) for writing your own Nice Game Hint guides.
+# Writing a guide
+So, you want to write your own hints for a game? That's cool. Every game should have spoiler free hints! Best place to start is [this is a template repository](https://github.com/nice-game-hints/template). It has examples and the following instructions.
 
 <p class="hidden">
 Fill this README.md with something you want to tell _a contributor_. This README is not shown in the www.nicegamehints.com site.
