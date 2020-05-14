@@ -60,15 +60,19 @@ Every `#` line (markdown's header) denotes one hint under the guide. That text i
 
 ## Subguides
 Guides form a folder structure. All the folders and md files under the guide's folder form the subguides. Under the guide folder a `index.md` file is required. Example of guide folder structure:
- - index.md
- - 01-first-part-of-the-game/
-   - index.md
-   - 010-subguide.md
-   - 020-subguide-for-first-part/
-     - index.md
- - 02-second-part-of-the-game/
-   - index.md
-   - 010-subguide.md
+```
+📦 repository root
+ ┣ 📜 index.md
+ ┣ 📂 01-first-part-of-the-game
+ ┃ ┣ 📜 index.md
+ ┃ ┣ 📜 010-subguide.md
+ ┃ ┗ 📂 020-subguide-for-first-part
+ ┃   ┗ 📜 index.md
+ ┣ 📂 02-second-part-of-the-game
+ ┃ ┣ 📜 index.md
+ ┃ ┣ 📜 010-subguide.md
+ ┃ ┗ 📜 020-another.md
+```
 
 Subguides are listed in alphabetical order so it is suggested to use numbering to name the files. The file name is only visible in browser location bar.
 
