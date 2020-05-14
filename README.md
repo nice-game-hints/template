@@ -2,7 +2,9 @@
 [This is a template repository](https://github.com/nice-game-hints/template) for writing your own Nice Game Hint guides.
 
 <p class="hidden">
-Fill this README.md with something you want to tell _a contributor_. This README is not shown in the www.nicegamehints.com site. Copy this template repository (From the green "Clone or download" button) to get started with your own game hints.
+Fill this README.md with something you want to tell _a contributor_. This README is not shown in the www.nicegamehints.com site.
+ 
+Copy this template repository (From the green "Clone or download" button) to get started with your own game hints.
 </p>
 
 # Writing the guide
