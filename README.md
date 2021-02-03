@@ -44,10 +44,11 @@ keywords: tin foil, baked potato
 This text is shown first to the reader and it is also visible in Google snippet.
 
 # Show the first hint
-Everything until the next `#` line is part of the first hint
+Everything until the next `#` line is part of the first hint. You can use markdown notations.
 
 # Show the second hint
-This is the contents of the second hint.
+This is the contents of the second hint. Here is a picture:
+![This picture text is not shown](picture_file_name.png)
 ```
 
 Again, the guide file starts with mandatory metadata:
@@ -57,6 +58,8 @@ Again, the guide file starts with mandatory metadata:
 The following text is shown to the user straight away so don't give up the solution here yet! It is also shown in Google's listings as they have a preview of the page. The actual hints are not shown in Google.
 
 Every `#` line (markdown's header) denotes one hint under the guide. That text is shown in the hint button so don't make it too long. It can be as simple as "Hint 1", "Hint 2" etc.
+
+You can use basic markdown notations: https://guides.github.com/features/mastering-markdown/
 
 ## Subguides
 Guides form a folder structure. All the folders and md files under the guide's folder form the subguides. Under the guide folder a `index.md` file is required. Example of guide folder structure:
@@ -95,8 +98,31 @@ Next, you need [a potato peeler](../040-potato-peeler/index.md). This will link 
 Finally, get [a permission to peel](/04-fourth-part-of-the-game/010-permission.md). This will link starting from the root of the guide folder structure.
 ```
 
+## Quick hints
+You can write quick hints inside a guide file. A quick hint is rendered as a question mark button that will show the hint in a popup.
+
+Write quick hint with the markdown footnote notation: `^[ footnote notation ]`
+
+```markdown
+---
+title: Example about quick hint
+---
+
+In this hint you should use some eating utensil. ^[ You can find a fork in the kitche drawer. ]
+
+# I have a tool
+The fork? Be careful with it. ^[ Stick the fork into the electric outlet. ]
+
+# Show me
+Click on the right question mark to see a picture. ^[ ![This picture text is not shown](picture_inside_quickhint.png) ]
+```
+
 ## background.jpg
 You can add a file named `background.jpg` in the root folder of you guide. That image will be used as the background image of the guide. 
+
+
+## small_bg.jpg
+You can add a file named `small_bg.jpg` in the root folder of you guide. That image will be used as the background image in the listing. It has to be 500x300 jpg. 
 
 ## Examples?
 Browse the [Nice Game Hints repository](https://github.com/nice-game-hints) for examples. The Deponia guides are great to start with!
