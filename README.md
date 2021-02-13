@@ -127,5 +127,31 @@ You can add a file named `small_bg.jpg` in the root folder of you guide. That im
 ## Examples?
 Browse the [Nice Game Hints repository](https://github.com/nice-game-hints) for examples. The Deponia guides are great to start with!
 
+# Testing the guide
+You can test your written guide in www.nicegamehints.com. First you have to have the guide in a local directory structure. This probably is the case if you are writing it locally. Next, you need to serve the directory via http. Simplest way is to use something like http-server (https://www.npmjs.com/package/http-server).
+
+After installing the http-server go to the root of your guide (where the README.md and index.md are).
+Then run
+```
+http-server --cors -d true -c-1 .
+```
+
+It should output something like this:
+```
+Starting up http-server, serving .
+Available on:
+  http://192.168.64.1:8080
+  http://180.97.36.27:8080
+  http://127.0.0.1:8080
+Hit CTRL-C to stop the server
+```
+Please note the port of your http-server (in the example it is 8080).
+
+You can test if the http-server is working by navigating with your browser (note the port number) to http://localhost:8080/index.md. You should see your raw index file.
+
+If the http-server is running properly and you see the file, you can now try to navigate to address http://www.nicegamehints.com/guide/local:8080/ (please note the port number).
+
+Adjust your cookies (disable all but required) to see the guide in pure form. The navigation might be having issues (especially when navigating *back*). Please check the url and remove excess "/" characters if you end up in a 404 page.
+
 # Publishing the guide
 Please create [an issue](https://github.com/nice-game-hints/template/issues) to this repository about publishing and I will help you with it.
