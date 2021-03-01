@@ -73,11 +73,27 @@ Guides form a folder structure. All the folders and md files under the guide's f
  ┃   ┗ 📜 index.md
  ┣ 📂 02-second-part-of-the-game
  ┃ ┣ 📜 index.md
- ┃ ┣ 📜 010-subguide.md
- ┃ ┗ 📜 020-another.md
+ ┃ ┣ 📜 another.md
+ ┃ ┗ 📜 benother.md
 ```
 
 Subguides are listed in alphabetical order so it is suggested to use numbering to name the files. The file name is only visible in browser location bar.
+The other option is to use `order` metadata. It will then order the sub guides from lower number to higher. For example if you want to order the `benother.md` before `another.md`:
+```markdown
+filename: another.md
+---
+title: Second item
+order: 50
+---
+```
+
+```markdown
+filename: benother.md
+---
+title: First item
+order: 20
+---
+```
 
 ## Linking between the guides
 To link to another guide you write markdown's links. Here is an example guide file.:
