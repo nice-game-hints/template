@@ -133,6 +133,15 @@ The fork? Be careful with it. ^[ Stick the fork into the electric outlet. ]
 Click on the right question mark to see a picture. ^[ ![This picture text is not shown](picture_inside_quickhint.png) ]
 ```
 
+## Subguide links
+You can also show a link in the subguide list that will point to another guide file.
+
+```markdown
+---
+linkTitle: This is a subguide linking to another guide
+link: /full/path/to/guide.md
+```
+
 ## background.jpg
 You can add a file named `background.jpg` in the root folder of you guide. That image will be used as the background image of the guide. 
 
