@@ -34,6 +34,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: nice-game-hints/ngh-action-link-check@b1dfa5b85e6933ac37da4232d6698d6000015efa
+    - uses: nice-game-hints/ngh-action-link-check@main
       with:
         mdGlob: '**/*.md'
