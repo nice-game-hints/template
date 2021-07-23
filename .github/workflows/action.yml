@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: nice-game-hints/validate-yaml-schema@144476a5b09bf90985b43812bcfdcb1d935fc50e
+    - uses: nice-game-hints/validate-yaml-schema@37be630568e8aa8fd45ee698fa5e5222911f547c
       with:
         yamlSchemasJson: |
           {
