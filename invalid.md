@@ -6,6 +6,6 @@ order: "10"
 This is invalid guide file
 
 # First hint with content
-First content
+First content with [empty link]()
 
 # Second hint without content
