@@ -21,6 +21,7 @@ jobs:
   markdown-yaml-check:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - uses: nice-game-hints/validate-yaml-schema@878ecffc309cd28000d2935bdbcd7661ba7edb1b
       with:
         yamlSchemasJson: |
