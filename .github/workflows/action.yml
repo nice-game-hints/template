@@ -20,6 +20,7 @@ jobs:
       with:
         args: '**/*.md'
         config: '.github/config/markdown-lint.yml'
+        rules: '.github/config/markdown-rules.js'
   markdown-yaml-check:
     runs-on: ubuntu-latest
     steps:
