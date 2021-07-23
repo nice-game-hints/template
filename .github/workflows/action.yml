@@ -17,4 +17,13 @@ jobs:
     steps:
     - uses: tomwhross/write-good-action@v1.2
       with:
-        args: './README.md'
+        args: '**/*.md'
+  markdown-yaml-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: nice-gamehints/validate-yaml-schema@master
+      with:
+        yamlSchemasJson: |
+          {
+                ".github/workflows/ngh_schema.json": "**/*.md"
+          }
