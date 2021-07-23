@@ -16,7 +16,7 @@ jobs:
     # uses: tomwhross/write-good-action@4d9b6eeacd2a6e7c8d3ea0c3fd1643b5d033b2ea
     steps:
     - uses: actions/checkout@master
-    - uses: tomwhross/write-good-action@v1.2
+    - uses: avto-dev/markdown-lint@v1.5.0
       with:
         args: '**/*.md'
         config: '.github/config/markdown_lint.yml'
