@@ -1,7 +1,3 @@
- # MD test
-**errorneous bold*
-[Missing link]
-
 # Writing a guide
 So, you want to write your own hints for a game? That's cool. Every game should have spoiler free hints! Best place to start is [this template repository](https://github.com/nice-game-hints/template). It has examples and the following instructions.
 
