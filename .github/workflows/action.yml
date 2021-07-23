@@ -19,6 +19,7 @@ jobs:
     - uses: tomwhross/write-good-action@v1.2
       with:
         args: '**/*.md'
+        config: '.github/config/markdown_lint.yml'
   markdown-yaml-check:
     runs-on: ubuntu-latest
     steps:
