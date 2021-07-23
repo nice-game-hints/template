@@ -19,7 +19,7 @@ jobs:
     - uses: avto-dev/markdown-lint@v1.5.0
       with:
         args: '**/*.md'
-        config: '.github/config/markdown_lint.yml'
+        config: '.github/config/markdown-lint.yml'
   markdown-yaml-check:
     runs-on: ubuntu-latest
     steps:
