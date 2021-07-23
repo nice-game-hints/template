@@ -27,5 +27,5 @@ jobs:
       with:
         yamlSchemasJson: |
           {
-                ".github/workflows/ngh_schema.json": "**/*.md"
+                "./.github/workflows/ngh_schema.json": "**/*.md"
           }
