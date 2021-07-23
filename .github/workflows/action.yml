@@ -30,3 +30,10 @@ jobs:
                 "./.github/workflows/ngh_schema.json": "**/*.md"
           }
         mdGlob: '**/*.md'
+  ngh-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: nice-game-hints/ngh-action-link-check@master
+      with:
+        mdGlob: '**/*.md'
