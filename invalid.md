@@ -1,6 +1,6 @@
 ---
 about: missing title
-order: "10"
+order: "10
 ---
 
 This is invalid guide file
