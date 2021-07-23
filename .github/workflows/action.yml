@@ -1,4 +1,4 @@
-name: Check Markdown links
+name: Validate NGH
 
 on: push
 
@@ -10,3 +10,32 @@ jobs:
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         config-file: .github/workflows/mlc_config.json
+  markdown-lint:
+    runs-on: ubuntu-latest    
+    # You may pin to the exact commit or the version.
+    # uses: tomwhross/write-good-action@4d9b6eeacd2a6e7c8d3ea0c3fd1643b5d033b2ea
+    steps:
+    - uses: actions/checkout@master
+    - uses: avto-dev/markdown-lint@v1.5.0
+      with:
+        args: '**/*.md'
+        config: '.github/config/markdown-lint.yml'
+        rules: '.github/config/markdown-rules.js'
+  markdown-yaml-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: nice-game-hints/validate-yaml-schema@master
+      with:
+        yamlSchemasJson: |
+          {
+                "./.github/workflows/ngh_schema.json": "**/*.md"
+          }
+        mdGlob: '**/*.md'
+  ngh-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: nice-game-hints/ngh-action-link-check@main
+      with:
+        mdGlob: '**/*.md'

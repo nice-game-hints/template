@@ -1,0 +1,22 @@
+{
+  "$schema": "https://www.nicegamehints.com/2021-22/schema",
+  "$id": "https://www.nicegamehints.com/guide.schema.json",
+  "title": "Ngh metadata",
+  "description": "Ngh metadata schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "title of the guide",
+      "type": "string"
+    },
+    "linkTitle": {
+      "description": "the title shown in the link",
+      "type": "string"
+    },
+    "order": {
+      "description": "the order number of the guide",
+      "type": "integer"
+    }
+  },
+  "required": [ "title" ]
+}

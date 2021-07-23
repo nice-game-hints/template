@@ -1,0 +1,7 @@
+default: false
+
+# No empty links <https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md042>
+MD042: true
+
+# No empty hints
+NGH-001: true
