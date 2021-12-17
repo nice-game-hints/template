@@ -22,7 +22,7 @@ author: Juho Rutila
 praise: https://www.buymeacoffee.com/jrutila
 ---
 
-Welcome to spoiler free hints for Deponia Doomsday! Select a guide.
+Welcome to free hints for Deponia Doomsday! Select a guide.
 ```
 
 The part between `---` lines is _metadata_:
@@ -49,6 +49,9 @@ Everything until the next `#` line is part of the first hint. You can use markdo
 # Show the second hint
 This is the contents of the second hint. Here is a picture:
 ![This picture text is not shown](picture_file_name.png)
+
+## Tell me the solution
+The two hashtags means that this text will contain spoilers. The button is rendered red so that the reader knows to watch out.
 ```
 
 Again, the guide file starts with mandatory metadata:
@@ -58,6 +61,8 @@ Again, the guide file starts with mandatory metadata:
 The following text is shown to the user straight away so don't give up the solution here yet! It is also shown in Google's listings as they have a preview of the page. The actual hints are not shown in Google.
 
 Every `#` line (markdown's header) denotes one hint under the guide. That text is shown in the hint button so don't make it too long. It can be as simple as "Hint 1", "Hint 2" etc.
+
+Every '##' line denotes a hint that will reveal a spoiler next. These hints get special treatment in the UI.
 
 You can use basic markdown notations: https://guides.github.com/features/mastering-markdown/
 
@@ -77,8 +82,8 @@ Guides form a folder structure. All the folders and md files under the guide's f
  ┃ ┗ 📜 benother.md
 ```
 
-Subguides are listed in alphabetical order so it is suggested to use numbering to name the files. The file name is only visible in browser location bar.
-The other option is to use `order` metadata. It will then order the sub guides from lower number to higher. For example if you want to order the `benother.md` before `another.md`:
+Subguides are listed in alphabetical order so it is suggested to ~~use numbering to name the files~~ use the `order`metadata. The file name is only visible in browser location bar and some other places.
+The preferred option is to use `order` metadata. It will then order the sub guides from lower number to higher. For example if you want to order the `benother.md` before `another.md`:
 ```markdown
 filename: another.md
 ---
@@ -113,6 +118,37 @@ Next, you need [a potato peeler](../040-potato-peeler/index.md). This will link 
 # Show the third hint
 Finally, get [a permission to peel](/04-fourth-part-of-the-game/010-permission.md). This will link starting from the root of the guide folder structure.
 ```
+
+## Linking between the guides to certain hint
+To link to another guide's certain hint you write markdown's links with anchors. Here is an example target guide file.:
+```markdown
+---
+title: Linked hints
+---
+
+Intro
+
+# First hint
+This is the first hint and needs to be skipped
+
+# Second hint {#second}
+This is  the second hint we want the reader to get directly
+
+```
+
+To link directly to the second hint:
+```markdown
+---
+title: How to get tin foil?
+---
+
+Guide for tin foil.
+
+# Show the first hint
+Go to the [other guide's second hint](guide.md#second). This will link to another guide file's second hint.
+
+```
+
 
 ## Quick hints
 You can write quick hints inside a guide file. A quick hint is rendered as a question mark button that will show the hint in a popup.
