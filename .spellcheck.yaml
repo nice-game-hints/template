@@ -1,0 +1,11 @@
+spellchecker: hunspell
+
+matrix:
+- name: markdowns
+  aspell:
+    lang: en
+    d: en_US
+  sources:
+  - '**/*.md'
+  pipeline:
+  - pyspelling.filters.markdown
