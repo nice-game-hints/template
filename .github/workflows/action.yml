@@ -39,9 +39,3 @@ jobs:
     - uses: nice-game-hints/ngh-action-link-check@main
       with:
         mdGlob: '**/*.md'
-  spellcheck:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: igsekor/pyspelling-any@v1.0.4
-      name: Spellcheck
