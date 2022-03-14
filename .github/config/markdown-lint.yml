@@ -3,5 +3,8 @@ default: false
 # No empty links <https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md#md042>
 MD042: true
 
+# Headings must start at the beginning of the line <https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md023>
+MD023: true
+
 # No empty hints
 NGH-001: true
