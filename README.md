@@ -169,6 +169,24 @@ The fork? Be careful with it. ^[ Stick the fork into the electric outlet. ]
 Click on the right question mark to see a picture. ^[ ![This picture text is not shown](picture_inside_quickhint.png) ]
 ```
 
+## Signposts
+Signposts are direct quotes from the game that might help the player with the puzzle. They are hidden from view until the user opens the signpost collapse. Signposts are added in the beginning of the hint file. Like this:
+
+```markdown
+---
+title: Example of signposts
+---
+
+> Character: This is a text from the game
+
+> Another character: add an empty line if there are multiple signposts
+
+Here is the actual text that is shown to the user. The above signpost texts are hidden, at first.
+
+# First hint
+And the first hint
+```
+
 ## Subguide links
 You can also show a link in the subguide list that will point to another guide file.
 
