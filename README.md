@@ -196,6 +196,34 @@ linkTitle: This is a subguide linking to another guide
 link: /full/path/to/guide.md
 ```
 
+## Achivements
+You can create a special folder with a name of `_achievements` to the root of the repository to write gradual hints for achievements.
+```
+📦 repository root
+ ┣ 📜 index.md
+ ┣ 📂 first-hints
+ ┃ ┣ 📜 index.md
+ ┃ ┣ 📜 010-subguide.md
+ ┣ 📂 _achievements
+ ┃ ┣ 📜 index.md
+ ┃ ┣ 📜 im-ready.md
+ ┃ ┣ 📜 im-ready.png
+ ┃ ┣ 📜 did-that.md
+ ┃ ┣ 📜 did-that.png
+ ```
+ In above example there are two achievements: `im-ready` and `did-that`. The png file is a small image of the achievement that is rendered on the achievement list. The achievement files are pretty much similar to hint files. On top of other metadata you should also write a `subtitle`. It will be shown to the user in the achievement list.
+ 
+### Linking to achievements from guides
+You can have direct linking from a guide to the achievement. Many times the achievements are related to specific puzzle or area in the game. You can link to the achievement by adding a `achievements` metadata like this:
+
+```markdown
+---
+title: This awesome area
+achievements: im-ready,did-that
+order: 50
+---
+```
+
 ## background.jpg
 You can add a file named `background.jpg` in the root folder of you guide. That image will be used as the background image of the guide. 
 
