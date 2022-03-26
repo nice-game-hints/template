@@ -160,7 +160,7 @@ Write quick hint with the markdown footnote notation: `^[ footnote notation ]`
 title: Example about quick hint
 ---
 
-In this hint you should use some eating utensil. ^[ You can find a fork in the kitche drawer. ]
+In this hint you should use some eating utensil. ^[ You can find a fork in the kitchen drawer. ]
 
 # I have a tool
 The fork? Be careful with it. ^[ Stick the fork into the electric outlet. ]
@@ -196,7 +196,7 @@ linkTitle: This is a subguide linking to another guide
 link: /full/path/to/guide.md
 ```
 
-## Achivements
+## Achievements
 You can create a special folder with a name of `_achievements` to the root of the repository to write gradual hints for achievements.
 ```
 📦 repository root
