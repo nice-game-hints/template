@@ -27,7 +27,7 @@ Welcome to free hints for Deponia Doomsday! Select a guide.
 
 The part between `---` lines is _metadata_:
  - _title_: The name of the game that is shown in the page and page title etc.
- - _keywords_: list of keywords to help search engines
+ - _keywords_: list of keywords to help search engines, these root index.md keywords are repeated on every other guide under the game
  - _author_: Your name. Shown under every guide.
  - _praise_: buymeacoffee.com url to ask readers to give you money for your hard work with the guide.
 
@@ -71,19 +71,19 @@ Guides form a folder structure. All the folders and md files under the guide's f
 ```
 📦 repository root
  ┣ 📜 index.md
- ┣ 📂 01-first-part-of-the-game
+ ┣ 📂 first-part-of-the-game
  ┃ ┣ 📜 index.md
- ┃ ┣ 📜 010-subguide.md
- ┃ ┗ 📂 020-subguide-for-first-part
+ ┃ ┣ 📜 subguide.md
+ ┃ ┗ 📂 subguide-for-first-part
  ┃   ┗ 📜 index.md
- ┣ 📂 02-second-part-of-the-game
+ ┣ 📂 second-part-of-the-game
  ┃ ┣ 📜 index.md
  ┃ ┣ 📜 another.md
  ┃ ┗ 📜 benother.md
 ```
 
-Subguides are listed in alphabetical order so it is suggested to ~~use numbering to name the files~~ use the `order`metadata. The file name is only visible in browser location bar and some other places.
-The preferred option is to use `order` metadata. It will then order the sub guides from lower number to higher. For example if you want to order the `benother.md` before `another.md`:
+The file name is only visible in browser location bar and some other places.
+Subguides are listed by the `order` metadata. It will then order the sub guides from lower number to higher. If you omit the `order` metadata the guides are listed in alphabetical order. For example if you want to order the `benother.md` before `another.md`:
 ```markdown
 filename: another.md
 ---
@@ -101,7 +101,7 @@ order: 20
 ```
 
 ## Linking between the guides
-To link to another guide you write markdown's links. Here is an example guide file.:
+To link to another guide you write markdown's links. Link with the single word of the guide filename. This means the guide file names should be unique. Here is an example guide file.:
 ```markdown
 ---
 title: How to get tin foil?
@@ -110,13 +110,13 @@ title: How to get tin foil?
 Guide for tin foil.
 
 # Show the first hint
-First, you need [a hot potato](030-potato.md). This will link to another guide file that is in the same folder as the guide file.
+First, you need [a hot potato](potato). This will link to another guide file that is in the same folder as the guide file.
 
 # Show the second hint
-Next, you need [a potato peeler](../040-potato-peeler/index.md). This will link to another subguide that is in parent folder.
+Next, you need [a potato peeler](../potato-peeler/index.md). This will link to another subguide that is in parent folder. Prefer to use the single word link.
 
 # Show the third hint
-Finally, get [a permission to peel](/04-fourth-part-of-the-game/010-permission.md). This will link starting from the root of the guide folder structure.
+Finally, get [a permission to peel](/fourth-part-of-the-game/permission.md). This will link starting from the root of the guide folder structure. Prefer to use the single word link.
 ```
 
 ## Linking between the guides to certain hint
@@ -145,7 +145,7 @@ title: How to get tin foil?
 Guide for tin foil.
 
 # Show the first hint
-Go to the [other guide's second hint](guide.md#second). This will link to another guide file's second hint.
+Go to the [other guide's second hint](guide#second). This will link to another guide file's second hint.
 
 ```
 
@@ -197,7 +197,7 @@ link: /full/path/to/guide.md
 ```
 
 ## Achievements
-You can create a special folder with a name of `_achievements` to the root of the repository to write gradual hints for achievements.
+You can create a special folder with a name of `_achievements` to write gradual hints for achievements. These `_achievements` folders can be under any folders. I suggest to write them into the root folder or under the chapter folders of the game.
 ```
 📦 repository root
  ┣ 📜 index.md
@@ -224,8 +224,8 @@ order: 50
 ---
 ```
 
-## background.jpg
-You can add a file named `background.jpg` in the root folder of you guide. That image will be used as the background image of the guide. 
+## background.webp
+You can add a file named `background.webp` in the root folder of you guide. That image will be used as the background image of the guide. 
 
 
 ## small_bg.jpg
