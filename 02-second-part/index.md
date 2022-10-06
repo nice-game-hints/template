@@ -1,5 +1,6 @@
 ---
 title: Second part
+order: 20
 ---
 
 The second part contains more stuff. This is just the index file and does not contain hints (it could, though).
