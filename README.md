@@ -235,10 +235,28 @@ You can add a file named `small_bg.jpg` in the root folder of you guide. That im
 Browse the [Nice Game Hints repository](https://github.com/nice-game-hints) for examples. The Deponia guides are great to start with!
 
 # Testing the guide
-You can test your written guide in www.nicegamehints.com. First you have to have the guide in a local directory structure. This probably is the case if you are writing it locally. Next, you need to serve the directory via http. Simplest way is to use something like http-server (https://www.npmjs.com/package/http-server).
+You can test your written guide in www.nicegamehints.com. First you have to have the guide in a local directory structure. This probably is the case if you are writing it locally. Next, you need to serve the directory via http. 
 
-After installing the http-server go to the root of your guide (where the README.md and index.md are).
-Then run
+You have three options:
+
+## Run with docker-compose
+Just run `docker-compose up -d`, it will load an image and run it
+
+## Run with docker
+on Windows:
+```
+docker run --rm -p 8080:8080 -v /$(pwd):/site ghcr.io/nice-game-hints/ngh-serve:latest
+```
+
+on Linux:
+```
+docker run --rm -p 8080:8080 -v .:/site ghcr.io/nice-game-hints/ngh-serve:latest
+```
+
+## Run with http-server
+Install http-server (https://www.npmjs.com/package/http-server) with `npm install -g http-server`
+
+After installing the http-server go to the root of your guide (where the README.md and index.md are) and run:
 ```
 http-server --cors -d true -c-1 .
 ```
@@ -254,6 +272,7 @@ Hit CTRL-C to stop the server
 ```
 Please note the port of your http-server (in the example it is 8080).
 
+## Viewing the guide in Nice Game Hints UI
 You can test if the http-server is working by navigating with your browser (note the port number) to http://localhost:8080/index.md. You should see your raw index file.
 
 If the http-server is running properly and you see the file, you can now try to navigate to address http://www.nicegamehints.com/guide/local:8080/ (please note the port number).
