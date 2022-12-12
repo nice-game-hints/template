@@ -1,0 +1,17 @@
+services:
+  ngh-serve:
+    image: ghcr.io/nice-game-hints/ngh-serve:latest
+    volumes:
+      - .:/site
+    ports:
+      - 8080:8080
+
+# To serve the files do either:
+# > docker-compose up -d
+# or:
+# on Windows:
+# > docker run --rm -p 8080:8080 -v /$(pwd):/site ghcr.io/nice-game-hints/ngh-serve:latest
+# on Linux:
+# > docker run --rm -p 8080:8080 -v .:/site ghcr.io/nice-game-hints/ngh-serve:latest
+
+# After successfully running either of those, visit: https://www.nicegamehints.com/guide/local:8080/
