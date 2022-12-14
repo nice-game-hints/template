@@ -1,3 +1,4 @@
+<!-- markdown-link-check-disable -->
 # Writing a guide
 So, you want to write your own hints for a game? That's cool. Every game should have spoiler free hints! Best place to start is [this template repository](https://github.com/nice-game-hints/template). It has examples and the following instructions.
 
@@ -281,3 +282,4 @@ Adjust your cookies (disable all but required) to see the guide in pure form. Th
 
 # Publishing the guide
 Please create [an issue](https://github.com/nice-game-hints/template/issues) to this repository about publishing and I will help you with it.
+<!-- markdown-link-check-enable -->
