@@ -204,7 +204,7 @@ You can create a special folder with a name of `_achievements` to write gradual 
  ┣ 📜 index.md
  ┣ 📂 first-hints
  ┃ ┣ 📜 index.md
- ┃ ┣ 📜 010-subguide.md
+ ┃ ┣ 📜 subguide.md
  ┣ 📂 _achievements
  ┃ ┣ 📜 index.md
  ┃ ┣ 📜 im-ready.md
@@ -240,10 +240,10 @@ You can test your written guide in www.nicegamehints.com. First you have to have
 
 You have three options:
 
-## Run with docker-compose
+## 1. Run with docker-compose
 Just run `docker-compose up -d`, it will load an image and run it
 
-## Run with docker
+## 2. Run with docker
 on Windows:
 ```
 docker run --rm -p 8080:8080 -v /$(pwd):/site ghcr.io/nice-game-hints/ngh-serve:latest
@@ -254,7 +254,7 @@ on Linux:
 docker run --rm -p 8080:8080 -v .:/site ghcr.io/nice-game-hints/ngh-serve:latest
 ```
 
-## Run with http-server
+## 3. Run with http-server
 Install http-server (https://www.npmjs.com/package/http-server) with `npm install -g http-server`
 
 After installing the http-server go to the root of your guide (where the README.md and index.md are) and run:
