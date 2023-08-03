@@ -1,4 +1,7 @@
 <!-- markdown-link-check-disable -->
+
+Crediti traduzione: Ryoma123 e Paper Jack
+
 # Scrivere una guida
 Allora, vuoi scrivere i suggerimenti per un gioco? Fantastico. Ogni titolo dovrebbe avere suggerimenti privi di anticipazioni! Il miglior punto di partenza è [questo repository](https://github.com/nice-game-hints/template), che contiene le istruzioni necessarie per la stesura di una guida e presenta anche degli esempi pratici.
 
