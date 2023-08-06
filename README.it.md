@@ -281,4 +281,6 @@ Regolate i cookie (disabilitateli tutti, tranne quelli obbligatori) per vedere l
 
 # Pubblicare la guida
 Si prega di creare un [issue](https://github.com/nice-game-hints/template/issues) a questo repository che riguarda la pubblicazione e vi aiuterò a risolverlo.
+
+Crediti traduzione: Ryoma123 e Paper Jack
 <!-- markdown-link-check-enable -->
