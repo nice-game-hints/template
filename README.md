@@ -67,6 +67,14 @@ Every '##' line denotes a hint that will reveal a spoiler next. These hints get 
 
 You can use basic markdown notations: https://guides.github.com/features/mastering-markdown/
 
+### Pictures
+If you want to display a picture as part of the guide, use this markdown: `![Picture caption](picture_file_name.png)`
+
+The named picture should be inside the same folder as the guide file.
+
+> **NGH Editor**
+> Just write the markdown and the editor lets you upload the picture then. It handles the renaming of the picture file automatically.
+
 ## Subguides
 Guides form a folder structure. All the folders and md files under the guide's folder form the subguides. Under the guide folder a `index.md` file is required. Example of guide folder structure:
 ```
